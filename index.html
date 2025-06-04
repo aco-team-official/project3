@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.99/build/spline-viewer.js"></script>
+</head>
+<body>
+   <img class="image-gradient" src="./gradient.jpg" alt="gradient">
+   <div class="layer-blur"></div>
+   <div class="container">
+    <header class="header">
+        <h1 class="logo">ACO Empire</h1>
+        <nav class="nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+            <a href="#blog">Blog</a>
+            <a href="#faq">FAQ</a>
+        </nav>
+        <button class="btn-signing">Get Started</button>
+    </header>
+<main>
+    <div class="content">
+        <div class="content-left">
+            <div class="tag-box">
+                <span class="tag">INTRODUCING</span>
+            </div>
+
+            <h1>EMAIL FOR <br> DEVELOPERS</h1>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+            
+            <div class="buttons">
+                <button type="button" class="btn-primary">Get Started</button>
+                <button type="button" class="btn-secondary">Learn More</button>
+            </div>
+        </div>
+        
+        <div class="content-right">
+            <spline-viewer 
+                class="robot-3d"  
+                url="https://prod.spline.design/k6rjbXybI-2DxBxO/scene.splinecode"
+            ></spline-viewer>
+        </div>
+    </div>
+</main>
+   </div>
+
+   <script>
+       const cursor = document.createElement('div');
+       cursor.classList.add('cursor-glow');
+       document.body.appendChild(cursor);
+
+       document.addEventListener('mousemove', (e) => {
+           cursor.style.left = e.clientX + 'px';
+           cursor.style.top = e.clientY + 'px';
+       });
+   </script>
+</body>
+</html>
