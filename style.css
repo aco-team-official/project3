@@ -398,4 +398,10 @@ spline-viewer {
         max-width: 1200px;
         margin: 0 auto;
     }
+
+}
+/* Hide any absolutely positioned element in bottom left inside .robot-3d */
+.robot-3d [style*="bottom: 0"][style*="left: 0"],
+.robot-3d .watermark {
+    display: none !important;
 }
